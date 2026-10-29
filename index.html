@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+	<title>EcoBank - Katalog Bank Sampah &amp; Edukasi Daur Ulang</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/ecobank.css" />
+</head>
+<body class="index is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header Navigation -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">EcoBank <span>SDGs 2026</span></a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Beranda</a></li>
+					<li><a href="index.html#katalog">Katalog Bank Sampah</a></li>
+					<li><a href="index.html#edukasi">Edukasi Daur Ulang</a></li>
+					<li><a href="contact.html" class="btn-pastel nav-cta">Hubungi Kami</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Hero Section Interactive -->
+		<section class="hero-modern">
+			<div class="hero-content">
+				<div class="badge-pill">
+					<i class="fas fa-leaf"></i> Inovasi Ekosistem Digital Berkelanjutan
+				</div>
+				<h1 class="hero-title">Kelola Sampah Jadi <span>Nilai Kebaikan</span></h1>
+				<p class="hero-desc">Platform terintegrasi untuk menemukan lokasi Bank Sampah terdekat, memantau nilai tukar daur ulang, dan mempercepat transformasi lingkungan hijau.</p>
+				<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+					<a href="#katalog" class="btn-pastel">Jelajahi Katalog</a>
+					<a href="#edukasi" class="btn-outline">Panduan Edukasi</a>
+				</div>
+			</div>
+
+			<!-- Interactive Visual Feature -->
+			<div class="hero-visual">
+				<div class="main-card-illus">
+					<div class="icon-circle" style="width:90px; height:90px; font-size: 2.5rem;">
+						<i class="fas fa-recycle"></i>
+					</div>
+					<h3 style="color: var(--pastel-dark); font-weight:800; margin-bottom: 0.5rem;">EcoBank Digital</h3>
+					<p style="text-align: center; color: var(--text-sub); font-size: 0.9rem;">Menghubungkan masyarakat dengan 100+ jaringan bank sampah terverifikasi.</p>
+					
+					<div class="floating-badge badge-1">
+						<i class="fas fa-map-marker-alt" style="color: #e63946;"></i>
+						<span>15+ Lokasi Medan</span>
+					</div>
+
+					<div class="floating-badge badge-2">
+						<i class="fas fa-coins" style="color: #ffb703;"></i>
+						<span>Tukar Tabungan</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Section: Katalog Bank Sampah -->
+		<section id="katalog" class="section-padding" style="background: #ffffff;">
+			<div class="section-title">
+				<h2>Katalog Bank Sampah Terdekat</h2>
+				<p>Cari dan temukan lokasi titik penyetoran sampah daur ulang di sekitarmu.</p>
+			</div>
+
+			<div class="catalog-tools">
+				<input type="search" id="katalogCari" placeholder="Cari nama, kecamatan, atau jenis sampah" aria-label="Cari bank sampah">
+				<button type="button" id="lokasiBtn" class="btn-outline"><i class="fas fa-location-crosshairs" aria-hidden="true"></i> Gunakan lokasi saya</button>
+				<output id="katalogJumlah" aria-live="polite">3 dari 3 lokasi</output>
+			</div>
+			<p id="lokasiStatus" class="form-status" role="status" aria-live="polite"></p>
+			<p id="katalogKosong" class="empty-state" hidden>Tidak ada bank sampah yang cocok. Coba kata kunci lain, misalnya nama kecamatan atau jenis sampah.</p>
+
+			<div class="row equal-height-row">
+				<!-- Card 1 -->
+				<div class="col-4 col-12-narrower equal-height-col">
+					<div class="glass-card">
+						<div>
+							<div class="icon-circle">
+								<i class="fas fa-dumpster"></i>
+							</div>
+							<div class="card-header-box">
+								<h3>Bank Sampah Berkah</h3>
+							</div>
+							<p style="color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1.2rem;">
+								<i class="fas fa-map-pin" style="color: var(--pastel-accent); margin-right: 6px;"></i> Kec. Medan Kota<br>
+								<i class="fas fa-box" style="color: var(--pastel-accent); margin-right: 6px;"></i> Plastik, Kertas, Logam
+							</p>
+						</div>
+						<div>
+							<span style="display:block; background: var(--pastel-green); color: var(--pastel-dark); padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Buka: 08.00 - 16.00 WIB</span>
+							<a href="https://www.google.com/maps/search/?api=1&query=Bank+Sampah+Medan+Kota" target="_blank" rel="noopener" class="btn-outline" style="width: 100%; text-align: center;">
+								<i class="fas fa-directions" style="margin-right: 6px;"></i> Detail Lokasi
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="col-4 col-12-narrower equal-height-col">
+					<div class="glass-card">
+						<div>
+							<div class="icon-circle">
+								<i class="fas fa-wine-bottle"></i>
+							</div>
+							<div class="card-header-box">
+								<h3>Bank Sampah Peduli Hijau</h3>
+							</div>
+							<p style="color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1.2rem;">
+								<i class="fas fa-map-pin" style="color: var(--pastel-accent); margin-right: 6px;"></i> Kec. Medan Baru<br>
+								<i class="fas fa-box" style="color: var(--pastel-accent); margin-right: 6px;"></i> Botol PET, Kardus, Jelantah
+							</p>
+						</div>
+						<div>
+							<span style="display:block; background: var(--pastel-green); color: var(--pastel-dark); padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Buka: 09.00 - 15.00 WIB</span>
+							<a href="https://www.google.com/maps/search/?api=1&query=Bank+Sampah+Medan+Baru" target="_blank" rel="noopener" class="btn-outline" style="width: 100%; text-align: center;">
+								<i class="fas fa-directions" style="margin-right: 6px;"></i> Detail Lokasi
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="col-4 col-12-narrower equal-height-col">
+					<div class="glass-card">
+						<div>
+							<div class="icon-circle">
+								<i class="fas fa-seedling"></i>
+							</div>
+							<div class="card-header-box">
+								<h3>Bank Sampah Asri Sejahtera</h3>
+							</div>
+							<p style="color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1.2rem;">
+								<i class="fas fa-map-pin" style="color: var(--pastel-accent); margin-right: 6px;"></i> Kec. Medan Selayang<br>
+								<i class="fas fa-box" style="color: var(--pastel-accent); margin-right: 6px;"></i> Organik &amp; Anorganik
+							</p>
+						</div>
+						<div>
+							<span style="display:block; background: var(--pastel-green); color: var(--pastel-dark); padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Buka: 08.00 - 17.00 WIB</span>
+							<a href="https://www.google.com/maps/search/?api=1&query=Bank+Sampah+Medan+Selayang" target="_blank" rel="noopener" class="btn-outline" style="width: 100%; text-align: center;">
+								<i class="fas fa-directions" style="margin-right: 6px;"></i> Detail Lokasi
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="lokasiWrap" hidden>
+				<h3 style="margin:2.5rem 0 1rem;color:var(--pastel-dark)">Terdekat dari lokasimu</h3>
+				<div id="lokasiHasil" class="row equal-height-row"></div>
+				<small style="color:var(--text-sub)">Sumber: OpenStreetMap. Data dikelola relawan, jadi jam buka dan jenis sampah perlu dicek ke lokasi.</small>
+			</div>
+		</section>
+
+		<!-- Section: Edukasi & Fitur -->
+		<section id="edukasi" class="section-padding">
+			<div class="section-title">
+				<h2>Edukasi & Langkah Pemilahan</h2>
+				<p>Pelajari cara memilah sampah dengan benar untuk memaksimalkan hasil daur ulang.</p>
+			</div>
+
+			<div class="row equal-height-row">
+				<!-- Fitur 1: Pilah Dari Rumah -->
+				<div class="col-6 col-12-narrower equal-height-col">
+					<div class="glass-card">
+						<div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
+							<div class="icon-circle" style="flex-shrink: 0;">
+								<i class="fas fa-sort-amount-down"></i>
+							</div>
+							<div>
+								<h3 style="font-weight:700; color:var(--pastel-dark); margin-bottom: 0.5rem;">Pilah dari Rumah</h3>
+								<p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 0;">Pisahkan kategori sampah basah (organik) dan sampah kering (anorganik) sejak dari wadah penampungan pertama di rumahmu.</p>
+							</div>
+						</div>
+						<div>
+							<button onclick="openModal('sampleModal')" class="btn-pastel" style="width: 100%; text-align: center; font-size: 0.9rem;">
+								<i class="fas fa-images" style="margin-right: 8px;"></i> Lihat Contoh Sampah Organik &amp; Anorganik
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Fitur 2: Pantau Nilai Ekonomi -->
+				<div class="col-6 col-12-narrower equal-height-col">
+					<div class="glass-card">
+						<div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
+							<div class="icon-circle" style="flex-shrink: 0;">
+								<i class="fas fa-chart-line"></i>
+							</div>
+							<div>
+								<h3 style="font-weight:700; color:var(--pastel-dark); margin-bottom: 0.5rem;">Pantau Nilai Ekonomi</h3>
+								<p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 0;">Cek estimasi harga konversi poin atau nilai rupiah per kilogram untuk setiap jenis limbah daur ulang yang kamu setorkan.</p>
+							</div>
+						</div>
+						<div>
+							<button onclick="openModal('priceModal')" class="btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">
+								<i class="fas fa-calculator" style="margin-right: 8px;"></i> Cek Estimasi Harga Sampah
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal 1: Contoh Jenis Sampah -->
+		<div id="sampleModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+			<div class="modal-content">
+				<button type="button" class="modal-close" aria-label="Tutup" onclick="closeModal('sampleModal')">&#10005;</button>
+				<h2 style="color: var(--pastel-dark); font-weight: 800; margin-bottom: 0.3rem; text-align: center; margin-top: 0.5rem;">Contoh Jenis Sampah</h2>
+				<p style="text-align: center; color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1.5rem;">Ketahui perbedaan sampah basah dan kering sebelum menyetorkannya.</p>
+
+				<div class="sample-grid">
+					<!-- Sampah Basah (Organik) -->
+					<div class="sample-box">
+						<img loading="lazy" src="https://mmc2.kalteng.go.id/files/berita/22052018091450_1.jpg" alt="Sampah Organik">
+						<h4 style="color: var(--pastel-dark); font-weight: 700; margin-bottom: 0.5rem;">
+							<i class="fas fa-apple-alt" style="color: #e63946; margin-right: 6px;"></i> Sampah Basah (Organik)
+						</h4>
+						<p style="color: var(--text-sub); font-size: 0.85rem; margin: 0; text-align: left;">
+							• Sisa makanan &amp; sayuran<br>
+							• Kulit buah-buahan<br>
+							• Daun &amp; ranting pohon<br>
+							• Sisa tulang &amp; daging
+						</p>
+					</div>
+
+					<!-- Sampah Kering (Anorganik) - Guaranteed Inline SVG Vector Image -->
+					<div class="sample-box">
+						<img loading="lazy" src="images/anorganik.jpg" alt="Sampah Anorganik">
+						<h4 style="color: var(--pastel-dark); font-weight: 700; margin-bottom: 0.5rem;">
+							<i class="fas fa-box-open" style="color: var(--pastel-accent); margin-right: 6px;"></i> Sampah Kering (Anorganik)
+						</h4>
+						<p style="color: var(--text-sub); font-size: 0.85rem; margin: 0; text-align: left;">
+							• Botol &amp; gelas plastik<br>
+							• Kardus &amp; kertas bekas<br>
+							• Kaleng minuman / logam<br>
+							• Botol kaca &amp; kemasan
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 2: Estimasi Harga Sampah -->
+		<div id="priceModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+			<div class="modal-content">
+				<button type="button" class="modal-close" aria-label="Tutup" onclick="closeModal('priceModal')">&#10005;</button>
+				<h2 style="color: var(--pastel-dark); font-weight: 800; margin-bottom: 0.3rem; text-align: center; margin-top: 0.5rem;">Estimasi Harga Sampah</h2>
+				<p style="text-align: center; color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1.5rem;">Daftar perkiraan nilai tukar per kilogram (Kg) di Bank Sampah mitra.</p>
+
+				<table class="price-table">
+					<thead>
+						<tr>
+							<th>Jenis Sampah</th>
+							<th>Kategori</th>
+							<th>Estimasi Harga / Kg</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Botol Plastik PET Bersih</td>
+							<td>Plastik</td>
+							<td><strong>Rp 3.500 - Rp 4.500</strong></td>
+						</tr>
+						<tr>
+							<td>Gelas Plastik Bening</td>
+							<td>Plastik</td>
+							<td><strong>Rp 3.000 - Rp 4.000</strong></td>
+						</tr>
+						<tr>
+							<td>Kardus Bekas Kering</td>
+							<td>Kertas</td>
+							<td><strong>Rp 1.800 - Rp 2.500</strong></td>
+						</tr>
+						<tr>
+							<td>Kertas HVS / Buku Bekas</td>
+							<td>Kertas</td>
+							<td><strong>Rp 2.000 - Rp 2.800</strong></td>
+						</tr>
+						<tr>
+							<td>Kaleng Alumunium Minuman</td>
+							<td>Logam</td>
+							<td><strong>Rp 12.000 - Rp 15.000</strong></td>
+						</tr>
+						<tr>
+							<td>Minyak Jelantah (Olahan)</td>
+							<td>Khusus</td>
+							<td><strong>Rp 5.000 - Rp 7.000 / Liter</strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="site-footer">
+			<h2>EcoBank Indonesia</h2>
+			<p>Mewujudkan Ekosistem Digital Berkelanjutan untuk Masa Depan.</p>
+			<ul class="footer-links"><li><a href="index.html#katalog">Katalog</a></li><li><a href="index.html#edukasi">Edukasi</a></li><li><a href="contact.html">Hubungi Kami</a></li></ul>
+			<small>&copy; EcoBank 2026. All rights reserved.</small>
+		</footer>
+
+	</div>
+
+	<!-- Scripts Bawaan Template -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/ecobank.js"></script>
+</body>
+</html>
